@@ -7,3 +7,164 @@
 
 /* Interactive schedule */
 .brand-icon{letter-spacing:-2px;border-top:0;transform:none;font-style:italic} .schedule-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.calendar>.button{margin:10px 0;font-size:11px;padding:10px 15px;min-height:38px}.session-row{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:14px 0;border-top:1px solid var(--line)}.session-row h3{font-size:13px;overflow-wrap:anywhere}.session-row p{font-size:11px;margin-top:5px;color:var(--muted)}.session-controls{display:flex;gap:6px;flex-shrink:0}.session-action{background:#e6ebdd;border-radius:50%;width:32px;height:32px;font-size:18px}.session-action:hover{background:var(--lime)}.session-done h3{text-decoration:line-through;color:#68715f}.session-done .session-action:first-child{background:var(--lime)}#activity-summary{margin:20px 0}.empty-activity{margin:20px 0;font-size:13px}.metric:hover{border-color:#a4b184}button:disabled{opacity:.6;cursor:default;transform:none}.calendar{min-width:0}@media(max-width:400px){.schedule-fields{grid-template-columns:1fr}.session-row{align-items:flex-start}.session-controls{gap:4px}.session-action{width:29px;height:29px}}
+
+/* Clear, dedicated account profile */
+.profile{padding:7px 12px 7px 7px;border-radius:28px;gap:9px;transition:background .2s,color .2s}
+.profile:hover,.profile.active{background:#edf1e8}
+.profile .avatar{width:36px;height:36px;background:#e4eadc;color:#33402f}
+.profile .avatar svg{width:21px;height:21px;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.profile-label{font-size:12px}
+.profile-chevron{font-size:14px;color:var(--muted);margin-left:1px}
+.account-view{max-width:1300px}
+.account-layout{display:grid;grid-template-columns:.82fr 1.5fr;align-items:start;gap:22px}
+.account-overview{display:flex;flex-direction:column;gap:24px;min-height:300px;padding:30px;border-radius:13px;background:var(--ink);color:white}
+.account-identity{display:flex;align-items:center;gap:18px}
+.account-avatar{display:grid;place-items:center;flex:none;width:68px;height:68px;border-radius:50%;background:var(--lime);color:var(--ink);font-family:Manrope,Arial,sans-serif;font-size:30px;font-weight:800}
+.account-overview .eyebrow{color:#c2d1b1;font-size:8px;letter-spacing:2px;margin-bottom:8px}
+.account-overview h2{font-size:23px}
+.account-identity>div>p:last-child{margin-top:5px;color:#c2d1b1;font-size:12px}
+.account-status{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;padding:8px 12px;border:1px solid #ffffff30;border-radius:20px;color:#e7ecdf;font-size:10px}
+.account-status i{width:7px;height:7px;border-radius:50%;background:var(--lime)}
+.account-note{max-width:310px;color:#c3cbc1;font-size:12px;line-height:1.65}
+.account-settings{padding:30px;background:#fbfcf8}
+.account-card-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.account-card-heading h2{font-size:23px}
+.account-card-heading>p{max-width:240px;color:var(--muted);font-size:11px;line-height:1.55}
+.account-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding-bottom:10px}
+.account-fields label{margin-top:22px}
+.account-data{margin:12px 0 4px;border-top:1px solid var(--line)}
+.account-data>div{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid var(--line);font-size:11px}
+.account-data>div span:last-child{color:var(--muted);text-align:right}
+.account-settings>.button{margin-top:22px;min-width:170px}
+@media(max-width:900px){.account-layout{grid-template-columns:1fr 1.35fr}.account-overview,.account-settings{padding:24px}.account-card-heading{align-items:flex-start;flex-direction:column;gap:6px}}
+@media(max-width:720px){.account-layout{grid-template-columns:1fr;gap:15px}.account-overview{min-height:0;padding:24px;gap:18px}.account-fields{grid-template-columns:1fr;gap:0}.account-settings{padding:23px}.account-card-heading h2{font-size:21px}.account-card-heading>p{max-width:none}}
+@media(max-width:400px){header{gap:8px}.profile{padding:5px 8px 5px 5px;gap:6px}.profile .avatar{flex:none;width:27px;height:27px}.profile-label{font-size:11px;white-space:nowrap}.profile-chevron{display:none}}
+
+/* Daily session layout and companion guidance */
+.workout-layout{grid-template-columns:minmax(0,1.45fr) minmax(270px,.85fr);align-items:start;gap:18px;max-width:1300px}.workout-card{min-width:0}.workout-card-intro{margin-top:10px;color:var(--muted);font-size:12px;line-height:1.6}.workout-sidebar{display:grid;gap:14px;align-content:start}.workout-summary-card,.workout-coaching-card,.workout-focus-card{padding:23px;background:#fbfcf8}.workout-summary-card .eyebrow,.workout-coaching-card .eyebrow,.workout-focus-card .eyebrow,.workout-recovery-card .eyebrow{font-size:8px;letter-spacing:2px;color:#64705f}.workout-duration{display:flex;align-items:baseline;gap:9px;margin:15px 0 18px}.workout-duration strong{font-size:46px;line-height:1;letter-spacing:-2px}.workout-duration span{color:var(--muted);font-size:12px}.workout-stat-list{display:grid;gap:12px;padding-top:16px;border-top:1px solid var(--line)}.workout-stat-list>div{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;font-size:10px}.workout-stat-list span{color:var(--muted)}.workout-stat-list strong{text-align:right;font-size:10px}.workout-aside-status{margin-top:16px;padding:11px 12px;border-radius:8px;background:#eff3e8;color:#4a5841;font-size:10px;line-height:1.5}.workout-coaching-card h2,.workout-focus-card h2{font-size:19px;margin:8px 0 13px}.workout-coaching-card ul{display:grid;gap:11px;margin:0;padding:0;list-style:none}.workout-coaching-card li{position:relative;padding-left:17px;color:#505a51;font-size:10px;line-height:1.5}.workout-coaching-card li::before{position:absolute;left:0;content:'•';color:#7d963f;font-size:16px;line-height:12px}.workout-focus-card>p:not(.eyebrow){margin:0 0 15px;color:var(--muted);font-size:11px;line-height:1.6}.workout-focus-card .button,.workout-recovery-card .button{min-height:39px;padding:10px 13px;font-size:10px}.workout-recovery-card{padding:22px;border-radius:12px;background:var(--lime)}.workout-recovery-card>p:not(.eyebrow){margin:8px 0 15px;color:#39432d;font-size:11px;line-height:1.6}.workout-recovery-card .outline-dark{border-color:#9db558}
+.plan-view{max-width:1300px}
+.plan-intro-card{display:flex;justify-content:space-between;align-items:end;gap:24px;margin:0 0 18px;padding:26px 30px;border-radius:13px;background:var(--ink);color:white}
+.plan-intro-card .eyebrow{color:#c4d39f;font-size:8px;margin-bottom:10px}
+.plan-intro-card h2{font-size:27px}
+.plan-intro-card>p{max-width:280px;color:#d2d9d4;font-size:12px;line-height:1.65}
+.weekly-plan-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.plan-day{min-height:155px;padding:19px;border:1px solid var(--line);border-radius:12px;background:#fbfcf8}
+.plan-day>p{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px;color:#64705f;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.plan-day h2{font-size:17px;letter-spacing:-.4px;line-height:1.25}
+.plan-day>span{display:block;margin-top:9px;color:var(--muted);font-size:10px}
+.plan-day.today{border-color:#9eb66d;background:#f0f5e8;box-shadow:inset 0 0 0 1px #9eb66d}
+.today-badge{padding:4px 7px;border-radius:12px;background:var(--lime);color:var(--ink);font-size:8px;letter-spacing:.5px}
+.plan-actions{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:20px;padding:18px 0;border-top:1px solid var(--line)}
+.plan-actions p{color:var(--muted);font-size:12px}
+.plan-actions .button{gap:16px}
+@media(max-width:900px){.weekly-plan-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.plan-intro-card{align-items:flex-start;flex-direction:column;padding:24px}.plan-intro-card h2{font-size:24px}.weekly-plan-grid{gap:9px}.plan-day{min-height:145px;padding:15px}.plan-day h2{font-size:15px}.plan-actions{align-items:stretch;flex-direction:column}.plan-actions .button{width:100%}}
+
+/* Weekly workout completion and activity */
+.progress-view{max-width:1300px}
+.progress-overview{display:grid;grid-template-columns:1fr auto;gap:18px 30px;align-items:center;margin:30px 0;padding:30px;border-radius:14px;background:var(--ink);color:white}
+.progress-overview .eyebrow{color:#c4d39f;font-size:8px}
+.progress-overview h2{font-size:38px;letter-spacing:-1.5px}
+.progress-overview h2 span+span{font-size:17px;font-weight:500;letter-spacing:0;color:#d2d9d4}
+#progress-week-dates{margin-top:8px;color:#c3cbc1;font-size:11px}
+.progress-overview-minutes{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.progress-overview-minutes strong{font-size:34px;letter-spacing:-1px}
+.progress-overview-minutes span{color:#c3cbc1;font-size:10px}
+.progress-goal-track{grid-column:1/-1;height:8px;border-radius:10px;background:#424945;overflow:hidden}
+.progress-goal-track span{display:block;width:0;height:100%;border-radius:inherit;background:var(--lime);transition:width .3s}
+.progress-section-title{font-size:22px;margin:35px 0 16px}
+.progress-week-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.progress-day{min-height:145px;padding:18px;border:1px solid var(--line);border-radius:12px;background:#fbfcf8}
+.progress-day.is-complete{border-color:#a5bf69;background:#f1f5e9}
+.progress-day.is-today{box-shadow:inset 0 0 0 1px var(--ink)}
+.progress-day-date{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:24px;color:#64705f;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.7px}
+.progress-day-status{padding:4px 7px;border-radius:12px;background:#e8ece3;color:#515d4d;font-size:8px;letter-spacing:0;text-transform:none;white-space:nowrap}
+.progress-day.is-complete .progress-day-status{background:var(--lime);color:var(--ink)}
+.progress-day h3{font-size:15px;line-height:1.3;overflow-wrap:anywhere}
+.progress-day-detail{margin-top:8px;color:var(--muted);font-size:10px;line-height:1.5}
+.progress-actions{display:flex;align-items:center;gap:12px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.progress-actions p{margin-right:auto;color:var(--muted);font-size:12px}
+.progress-actions .button{gap:14px}
+.outline-dark{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.progress-charts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.progress-chart-card{padding:24px;background:#fbfcf8;min-width:0}.progress-chart-card h2{font-size:20px;margin-bottom:7px}.progress-chart-card>div:first-child>p:last-child{color:var(--muted);font-size:11px}.progress-chart-card .eyebrow{font-size:8px;margin-bottom:8px}.chart-area{margin-top:20px;min-height:190px}.chart-area svg{display:block;width:100%;height:auto;overflow:visible}.chart-value{font:600 10px 'DM Sans',Arial,sans-serif;fill:var(--ink)}.chart-label{font:10px 'DM Sans',Arial,sans-serif;fill:var(--muted)}.progress-type-card{grid-column:1/-1}.type-chart{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 32px;margin-top:24px}.type-row-heading{display:flex;justify-content:space-between;gap:12px;margin-bottom:8px;font-size:11px}.type-row-heading strong{font-size:10px}.type-track{height:8px;border-radius:8px;background:#e5e9e1;overflow:hidden}.type-fill{display:block;height:100%;border-radius:inherit;background:#a9c95a}.type-fill.type-cardio{background:#e5a35c}.type-fill.type-mobility-recovery{background:#7f9cba}.type-fill.type-other{background:#b4a0c8}.chart-empty{grid-column:1/-1;color:var(--muted);font-size:11px}
+.plan-day{display:flex;flex-direction:column;align-items:flex-start}.plan-schedule{margin-top:16px;padding:10px 13px;min-height:38px;font-size:10px;gap:8px}
+.purpose-feature{margin:30px 0 38px;padding:34px;border-radius:14px;background:var(--ink);color:white;max-width:900px}.purpose-feature h2{font-size:32px;margin:10px 0}.purpose-feature>p:not(.eyebrow){max-width:580px;color:#d0d7d0;line-height:1.7;margin:0 0 22px}.purpose-heading{font-size:22px;margin-bottom:16px}.purpose-focus-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:1000px}.purpose-focus{display:flex;flex-direction:column;align-items:flex-start;gap:11px;min-height:160px;padding:21px;border:1px solid var(--line);border-radius:12px;background:#fbfcf8;text-align:left}.purpose-focus>span{color:#78846d;font-size:10px;letter-spacing:1px}.purpose-focus strong{font-size:16px}.purpose-focus small{color:var(--muted);font-size:11px;line-height:1.5}.purpose-focus.selected{border-color:#839b50;background:#eef3e5;box-shadow:inset 0 0 0 1px #839b50}.purpose-focus-status{margin-top:15px;color:var(--muted);font-size:12px}.purpose-actions{display:flex;gap:12px;margin-top:28px}
+@media(max-width:900px){.progress-week-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.progress-charts{grid-template-columns:1fr}.progress-type-card{grid-column:auto}.type-chart{grid-template-columns:1fr}.progress-chart-card{padding:19px}.chart-area{min-height:165px}}
+@media(max-width:720px){.purpose-focus-grid{grid-template-columns:1fr}.purpose-feature{padding:25px}.purpose-actions{flex-direction:column;align-items:stretch}}
+@media(max-width:720px){.progress-overview{padding:23px;gap:14px}.progress-overview h2{font-size:31px}.progress-overview h2 span+span{font-size:14px}.progress-overview-minutes strong{font-size:27px}.progress-week-grid{gap:9px}.progress-day{min-height:135px;padding:15px}.progress-day-date{align-items:flex-start;flex-direction:column;gap:8px;margin-bottom:20px}.progress-actions{align-items:stretch;flex-direction:column}.progress-actions p{margin-right:0}.progress-actions .button{width:100%}}
+
+/* Profile setup checklist and expanded account preferences */
+.onboarding .progress-track span{transition:width .35s ease}
+.onboarding-checklist{display:grid;gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.onboarding-checklist li{display:flex;align-items:center;gap:9px;color:#35402d;font-size:10px}
+.onboarding-checklist li::before{content:'○';display:grid;place-items:center;width:17px;height:17px;border:1px solid #72804e;border-radius:50%;font-size:11px;line-height:1}
+.onboarding-checklist li.complete::before{content:'✓';background:var(--ink);border-color:var(--ink);color:var(--lime);font-size:10px}
+.profile-fieldset{min-width:0;margin:24px 0 0;padding:18px 0 0;border:0;border-top:1px solid var(--line)}
+.profile-fieldset legend{padding:0 10px 0 0;font-family:Manrope,Arial,sans-serif;font-size:15px;font-weight:800}
+.profile-fieldset .account-fields{padding-bottom:0}
+.optional{color:var(--muted);font-size:10px;font-weight:400}
+.account-summary{padding-top:2px}
+.account-summary h3,.account-data h3{font-size:13px;margin-bottom:10px}
+.account-summary p{color:#d1d8cc;font-size:11px;line-height:1.65}
+.account-summary p+p{margin-top:4px}
+.account-data h3{padding-top:18px}
+@media(max-width:720px){.onboarding-checklist{gap:10px}.profile-fieldset{margin-top:20px;padding-top:16px}}
+
+/* Meal photo estimates, activity energy, and app connections */
+.photo-meal-card{margin:28px 0 22px;padding:28px;background:#fbfcf8}
+.photo-meal-heading,.burned-heading,.integration-heading{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.photo-meal-heading h2,.burned-heading h2,.integration-heading h2{font-size:23px}
+.photo-meal-heading .eyebrow,.burned-heading .eyebrow,.integration-heading .eyebrow{font-size:8px;color:#687858}
+.ai-pill{padding:7px 10px;border-radius:20px;background:#edf2e4;color:#45533b;font-size:9px;font-weight:700}
+.photo-meal-copy,.burned-copy{margin-top:12px;color:var(--muted);font-size:12px;line-height:1.6;max-width:720px}
+.photo-meal-tools{display:flex;align-items:center;gap:12px;margin-top:20px}
+.photo-upload{display:inline-flex;align-items:center;gap:10px;margin:0;padding:11px 16px;border:1px dashed #9ca894;border-radius:9px;background:white;color:#35402d;font-size:12px;cursor:pointer}
+.photo-upload:hover{border-color:#64794a;background:#f4f7ef}
+.photo-upload-icon{display:grid;place-items:center;width:23px;height:23px;border-radius:50%;background:var(--lime);font-size:18px}
+.photo-meal-tools .button{min-height:44px;padding:12px 17px;gap:10px;font-size:11px}
+.meal-ai-status{margin-top:12px;color:var(--muted);font-size:10px;line-height:1.5}
+.meal-photo-preview-wrap{margin-top:18px}
+.meal-photo-preview-wrap img{display:block;width:100%;max-width:360px;max-height:260px;object-fit:cover;border-radius:10px}
+.meal-scan-result{margin-top:20px;padding:20px;border-radius:10px;background:#f1f5e9}
+.meal-scan-result>.eyebrow{color:#64774d;font-size:8px}
+.meal-scan-result .account-fields{padding:0}
+.scan-foods,.estimate-note{margin-top:10px;color:var(--muted);font-size:11px;line-height:1.5}
+.estimate-note{font-size:10px}
+.meal-scan-result>.button{margin-top:16px}
+.meal-section-note{margin-top:8px;color:var(--muted);font-size:11px;line-height:1.5}
+.nutrition-grid{margin-top:0}
+.burned-section{margin-top:22px;padding:28px;background:#fbfcf8}
+.burned-heading{align-items:flex-end}
+.burned-total{display:flex;align-items:baseline;gap:6px}
+.burned-total strong{font-size:34px;letter-spacing:-1px}
+.burned-total span{color:var(--muted);font-size:11px}
+.burned-form{display:grid;grid-template-columns:1.4fr 1fr auto;align-items:end;gap:14px;margin-top:18px}
+.burned-form label{margin:0 0 8px}
+.burned-form .button{min-height:44px;padding:12px 18px;white-space:nowrap;font-size:11px}
+.burned-list{margin-top:16px}
+.burned-row{display:flex;align-items:center;gap:14px;padding:13px 0;border-top:1px solid var(--line);font-size:11px}
+.burned-row>a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.burned-row>strong{margin-left:auto;white-space:nowrap}
+.burned-empty{padding:15px 0;border-top:1px solid var(--line);color:var(--muted);font-size:11px}
+.burned-integration{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:18px;padding:16px;border-radius:10px;background:#f0f3eb}
+.burned-integration strong{font-size:11px}
+.burned-integration p{margin-top:5px;color:var(--muted);font-size:10px;line-height:1.5}
+.burned-integration .button{min-height:39px;padding:10px 14px;font-size:10px;white-space:nowrap}
+.account-integrations{margin-top:44px;padding-top:30px;border-top:1px solid var(--line)}
+.integration-heading{align-items:flex-end;margin-bottom:18px}
+.integration-heading>p{max-width:300px;color:var(--muted);font-size:11px;line-height:1.55}
+.integration-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.integration-card{padding:22px;border:1px solid var(--line);border-radius:12px;background:#fbfcf8}
+.integration-brand{display:flex;align-items:center;gap:12px}
+.integration-brand h3{font-size:17px}
+.integration-brand p{margin-top:4px;color:var(--muted);font-size:10px}
+.strava-mark,.nike-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#fc5200;color:white;font-size:18px;font-weight:800}
+.nike-mark{background:var(--ink)}
+.integration-card>p{margin:16px 0;color:#64705f;font-size:11px;line-height:1.6}
+.integration-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.integration-actions .button{min-height:40px;padding:10px 15px;font-size:10px}
+.integration-disconnect{background:none;color:#66705f;font-size:10px;text-decoration:underline;text-underline-offset:3px}
+.integration-help{color:#405a2c;font-size:10px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.integration-footnote{margin-top:15px;color:var(--muted);font-size:10px;line-height:1.6}
+@media(max-width:720px){.photo-meal-card,.burned-section{padding:21px}.photo-meal-heading,.integration-heading{align-items:flex-start;flex-direction:column;gap:10px}.photo-meal-tools{align-items:stretch;flex-direction:column}.photo-meal-tools>*{width:100%;justify-content:center}.burned-form{grid-template-columns:1fr;gap:12px}.burned-heading{align-items:flex-start}.burned-integration{align-items:stretch;flex-direction:column}.burned-integration .button{width:100%}.integration-grid{grid-template-columns:1fr}.account-integrations{margin-top:32px;padding-top:24px}}
